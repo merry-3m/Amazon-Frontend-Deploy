@@ -261,19 +261,66 @@ const [selectedLanguage, setSelectedLanguage] = useState(
                       <li>
                         <button
                          onClick={()=>{
-                          handleLanguage("AM")
+                          handleLanguage("ES")
                         }}
                          className='dropdown-item radio-btn txt'>
                           <input 
-                          checked={selectedLanguage === "AM"}
-                          onChange={()=>handleLanguage("AM")}
+                          checked={selectedLanguage === "ES"}
+                          onChange={()=>handleLanguage("ES")}
                           type="radio" />
                             <span className='checkmark'>
-                              Amharic - AM
+                            Espanol - ES
                             </span>
                         </button>
                       </li>
-                      
+                      {/* Hind */}
+                      <li>
+                        <button
+                         onClick={()=>{
+                          handleLanguage("HD")
+                        }}
+                         className='dropdown-item radio-btn txt'>
+                          <input 
+                          checked={selectedLanguage === "HD"}
+                          onChange={()=>handleLanguage("HD")}
+                          type="radio" />
+                            <span className='checkmark'>
+                              Hindu - HD
+                            </span>
+                        </button>
+                      </li>
+                      {/* Arabic */}
+                      <li>
+                        <button
+                         onClick={()=>{
+                          handleLanguage("AR")
+                        }}
+                         className='dropdown-item radio-btn txt'>
+                          <input 
+                          checked={selectedLanguage === "AR"}
+                          onChange={()=>handleLanguage("AR")}
+                          type="radio" />
+                            <span className='checkmark'>
+                              Arabic - AR
+                            </span>
+                        </button>
+                      </li>
+                      {/* Korean */}
+                      <li>
+                        <button
+                         onClick={()=>{
+                          handleLanguage("KR")
+                        }}
+                         className='dropdown-item radio-btn txt'>
+                          <input 
+                          checked={selectedLanguage === "KR"}
+                          onChange={()=>handleLanguage("KR")}
+                          type="radio" />
+                            <span className='checkmark'>
+                              Korean - KR
+                            </span>
+                        </button>
+                      </li>
                       
                         <div className={classes.learnMore}>
                           {t("learnMore")}
